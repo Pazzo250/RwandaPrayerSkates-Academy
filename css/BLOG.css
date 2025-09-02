@@ -1,0 +1,222 @@
+/* Blog Content Area */
+.blog-container {
+    display: flex;
+    max-width: 75rem; /* Consistent with index.html container */
+    margin: 2.5rem auto;
+    padding: 0 1.25rem;
+    gap: 2rem;
+    flex-direction: row; /* Default row layout */
+    align-items: start; /* Align sidebar and content to the top */
+}
+
+.blog-posts {
+    flex: 2; /* Take up more space for the main content */
+}
+
+.blog-post {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .blog-post {
+    background-color: #333;
+    color: #eee;
+    box-shadow: 0 0.125rem 0.25rem rgba(255, 255, 255, 0.05);
+}
+
+.blog-post img {
+    width: 100%;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    object-fit: cover; /* Maintain aspect ratio */
+    max-height: 300px; /* Limit image height */
+}
+
+.blog-post h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.dark-mode .blog-post h2 {
+    color: #eee;
+}
+
+.blog-post .post-meta {
+    font-size: 0.875rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.dark-mode .blog-post .post-meta {
+    color: #bbb;
+}
+
+.blog-post p {
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    color: #555;
+}
+
+.dark-mode .blog-post p {
+    color: #ddd;
+}
+
+.read-more-button {
+    display: inline-block;
+    padding: 0.625rem 1rem;
+    background-color: rgb(61, 38, 114);
+    color: white;
+    text-decoration: none;
+    border-radius: 1.875rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-button:hover {
+    background-color: #cc5500;
+}
+
+.dark-mode .read-more-button {
+    background-color: #555;
+    color: #eee;
+}
+
+.dark-mode .read-more-button:hover {
+    background-color: #777;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .sidebar {
+    background-color: #222;
+    color: #eee;
+    box-shadow: 0 0.125rem 0.25rem rgba(255, 255, 255, 0.05);
+}
+
+.sidebar .widget {
+    margin-bottom: 2rem;
+}
+
+.sidebar h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.dark-mode .sidebar h3 {
+    color: #eee;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 0.75rem;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.dark-mode .sidebar ul li a {
+    color: #ddd;
+}
+
+.sidebar ul li a:hover {
+    color: rgb(61, 38, 114);
+}
+
+.dark-mode .sidebar ul li a:hover {
+    color: #bbb;
+}
+
+.sidebar .social-icons {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .social-icons a {
+    color: #000;
+    text-decoration: none;
+}
+
+.dark-mode .sidebar .social-icons a {
+    color: #bbb;
+}
+
+.sidebar .social-icons a:hover {
+    color: rgb(61, 38, 114);
+}
+
+.dark-mode .sidebar .social-icons a:hover {
+    color: #000;
+}
+.sidebar .social-icons a:active {
+    color: rgb(61, 38, 114);
+}
+.social-icons a {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.dark-mode .social-icons a {
+   background-color: rgba(255, 255, 255, 0.9);
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 0.5rem;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+   transition: background-color 0.3s ease;
+   color: #000;
+}
+
+
+/* Media Queries for Responsiveness - Adjust as needed */
+@media (max-width: 768px) {
+    .blog-container {
+        flex-direction: column; /* Stack content and sidebar on smaller screens */
+        align-items: stretch; /* Make them take full width */
+    }
+
+    .sidebar {
+        margin-top: 2rem;    }
+
+    
+
+    
+}
+
+@media (max-width: 576px) {
+    .blog-post h2 {
+        font-size: 1.25rem;
+    }
+
+    .sidebar h3 {
+        font-size: 1.125rem;
+    }
+}
+
+
+

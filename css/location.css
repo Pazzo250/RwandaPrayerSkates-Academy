@@ -1,0 +1,161 @@
+
+
+/* Style the location container */
+.location-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.location-container h1,
+.location-container h2 {
+    color: rgb(61, 38, 114);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.address-section,
+.map-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.address-section h2,
+.map-section h2 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.address-details p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    display: flex; /* Align icon and text */
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+    height: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 0;
+    border-radius: 8px;
+}
+
+.entertaining-elements {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.entertaining-elements p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.entertaining-elements i {
+    font-size: 2em;
+    margin: 0 15px;
+    color: #0288d1; /* Example color */
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.cta-location {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cta-location h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.cta-location a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #7b1fa2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-location a:hover {
+    background-color: #5c188a;
+}
+
+
+.dark-mode .location-container {
+    background-color: #222;
+    color: #eee;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    border-color: #444;
+}
+
+.dark-mode .location-container h1,
+.dark-mode .location-container h2 {
+    color: #ddd;
+}
+
+.dark-mode .address-section,
+.dark-mode .map-section {
+    border-color: #444;
+}
+
+.dark-mode .address-details p {
+    color: #ccc;
+}
+
+.dark-mode .entertaining-elements p {
+    color: #ccc;
+}
+
+.dark-mode .entertaining-elements i {
+    color: #5bc0de; /* Adjust icon color in dark mode */
+}
+
+.dark-mode .cta-location h2 {
+    color: #ddd;
+}
+
+.dark-mode .cta-location a {
+    background-color: #5c188a;
+    color: #eee;
+}
+
+.dark-mode .cta-location a:hover {
+    background-color: #7b1fa2;
+}
+
+
+
+/* Responsive Design Adjustments for location.html */
+
+
+

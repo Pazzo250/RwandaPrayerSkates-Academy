@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Coming Soon Page Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p.lead {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 25px;
+        }
+
+        .progress-bar-container {
+            background-color: #e9ecef;
+            border-radius: 8px;
+            height: 20px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .progress-bar {
+            background-color: #28a745;
+            height: 100%;
+            width: 60%; /* Adjust this to represent the current progress */
+            border-radius: 8px;
+            animation: progressAnimation 2s linear infinite alternate;
+        }
+
+        @keyframes progressAnimation {
+            0% { width: 55%; }
+            100% { width: 65%; }
+        }
+
+        .eta {
+            color: #777;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 1.5em;
+            color: #555;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #007bff;
+        }
+
+        /* Optional: Add specific social media icons using a font library like Font Awesome */
+        /* .social-links .fa { ... } */
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            p.lead {
+                font-size: 1em;
+            }
+
+            .social-links a {
+                font-size: 1.3em;
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>We're Coming Soon!</h1>
+        <p class="lead">The page you're trying to access is currently under development and will be available soon. We appreciate your patience!</p>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+        </div>
+
+        <p class="eta">Estimated Time of Arrival: Keep an eye out for updates!</p>
+
+        <p>Stay connected with us:</p>
+        <div class="social-links">
+            <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+            </div>
+    </div>
+</body>
+</html>

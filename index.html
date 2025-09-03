@@ -1,30 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Responsive Website</title>        
+
+        <!-- Title -->
+        <title>Rwanda Prayer Skates Academy | Best Skating Academy in Kigali</title>
+
+        <!-- Canonical (SEO) -->
+        <link rel="canonical" href="https://rwandaprayerskates.space/" />
+
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="css/HOME.css"> 
-        <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">              
-        <!-- Basic SEO -->
-        <title>My Website - Best Skating Academy in Kigali</title>
-        <meta name="description" content="Learn how to skate with professional 
-        trainers in Kigali. Join our skating academy today!">
-        <meta name="keywords" content="skating, rollerblading, sports academy, 
-        Kigali,RwandaSkaters, skates kigali,Rwanda Prayer Sketes, skates academy">
-        <meta name="author" content="My Website Name">
-        <meta name="robots" content="index, follow">        
-        <!-- Mobile Responsive -->
+        <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
+
+        <!-- SEO Meta -->
+        <meta name="title" content="Rwanda Prayer Skates Academy">
+        <meta name="description" content="Join Rwanda Prayer Skates Academy — the best skating and biking school in Kigali. Professional trainers teaching kids safe skating and cycling.">
+        <meta name="keywords" content="skating, rollerblading, biking, kids academy, Kigali skating, Rwanda skaters, skating lessons, sports academy Kigali, Rwanda Prayer Skates Academy, skating school, biking lessons, kids sports, skating training, roller sports, cycling for kids, skating safety, Kigali kids activities, skating classes, biking classes, youth sports Rwanda, skating programs, biking programs, skating events Kigali">
+        <meta name="author" content="Patrick Ruberwa">
+        <meta name="robots" content="index, follow">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="Rwanda Prayer Skates Academy">
+        <meta property="og:description" content="Learn skating and biking with professional trainers in Kigali. Safe, fun, and educational for kids.">
+        <meta property="og:image" content="https://rwandaprayerskates.space/pics/LOGO.jpg">
+        <meta property="og:url" content="https://rwandaprayerskates.space">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Rwanda Prayer Skates Academy">
+
+        <!-- Twitter Card (even if you don’t use it, good SEO) -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Rwanda Prayer Skates Academy">
+        <meta name="twitter:description" content="Learn skating and biking with professional trainers in Kigali. Safe, fun, and educational for kids.">
+        <meta name="twitter:image" content="https://rwandaprayerskates.space/pics/LOGO.jpg">
+
+        <!-- JSON-LD (Schema.org) for Organization -->
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "SportsActivityLocation",
+            "name": "Rwanda Prayer Skates Academy",
+            "url": "https://rwandaprayerskates.space",
+            "logo": "https://rwandaprayerskates.space/pics/LOGO.jpg",
+            "description": "Skating and biking school for kids in Kigali, Rwanda.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Kigali",
+              "addressCountry": "Rwanda"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+250788881189",
+              "contactType": "Customer Service"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "08:00",
+                "closes": "18:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday"],
+                "opens": "09:00",
+                "closes": "15:00"
+              }
+            ],
+            "sameAs": [
+              "https://www.facebook.com/YourFacebookPage",
+              "https://www.instagram.com/YourInstagramProfile",
+              "https://youtube.com/YourTwitterProfile"
+            ],
+            "priceRange": "7000 RWF - 15000 RWF",
+            "review": [
+              {
+                "@type": "Review",
+                "author": "Patrick Ruberwa",
+                "datePublished": "2025-08-01",
+                "reviewBody": "Amazing skating academy for kids! Very professional and fun.",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                }
+              }
+            ]
+          }
+        </script>
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Viewport for Responsive Design -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Open Graph (Fo
-         r Social Media Sharing) -->
-        <meta property="og:title" content="My Website - Best Skating Academy in Kigali">
-        <meta property="og:description" content="Join our top-rated 
-        skating academy and learn from professionals.">
-        <meta property="og:image" content="https://mywebsite.com/thumbnail.jpg">
-        <meta property="og:url" content="https://mywebsite.com">
-        <meta name="twiter:card" content="summary_large_image">
-    </head>    
+
+    </head>
+
+    
     <body href="#">           
         <div class="wrapper-main">
             <div class="hero">              
@@ -76,7 +163,7 @@
             <div class="container">
               <div>                
                 <div class="story-section">
-                  <video width="480" height="270" controls preload="none" poster="cover">
+                  <video width="480" height="270" controls preload="none" poster="pics/cover.jpg" loading="lazy">
                     <source src="pics/RwandaPrayerSkates.mp4" type="video/mp4">                    
                   </video>
                   <div class="story-text">
@@ -104,7 +191,7 @@
                         The coaches here focus on discipline, confidence, and teamwork.</span>
                         It’s more than just sports—it’s a transformation.”</p>
                     <div class="profile">
-                      <img src="pics/grok_image_xlj4x2q.jpg" alt="Jessica">
+                      <img src="pics/grok_image_xlj4x2q.jpg" alt="Anne Uwase" loading="lazy">
                       <span><strong>Anne Uwase</strong><br>Kigali, Rwanda</span>
                     </div>
                   </div>            
@@ -117,7 +204,7 @@
                       </span>Our girls now wake up excited for practice. They’re more responsible, 
                       polite, and confident. It’s a safe space where they learn life skills while having fun.”</p>
                     <div class="profile">
-                      <img src="pics/grok_image_p8plq5.jpg" alt="Bizimana">
+                      <img src="pics/grok_image_p8plq5.jpg" alt="Eric is giving a story" loading="lazy">
                       <span><strong>Eric Nkurunziza</strong><br>Kigali, Rwanda</span>
                     </div>
                   </div>
@@ -128,7 +215,7 @@
                       He’s now riding confidently, making friends, and learning to support others.
                     </span>The environment builds teamwork, discipline, and good character.”</p>
                     <div class="profile">
-                      <img src="pics/grok_image_z1hxaj.jpg" alt="Thian">
+                      <img src="pics/grok_image_z1hxaj.jpg" alt="jean speaking" loading="lazy">
                       <span><strong>Jean-Paul Rukundo</strong><br>Kigali, Rwanda</span>
                     </div>
                   </div>
@@ -140,7 +227,7 @@
                       </span>The mentors don’t just teach skating and biking—they guide them toward 
                       better attitudes, self-esteem, and teamwork. We’re so grateful.”</p>
                     <div class="profile">
-                      <img src="pics/grok_image_xlj4x2q-1.jpg" alt="Arnold">
+                      <img src="pics/grok_image_xlj4x2q-1.jpg" alt="parent giving a story of her child" loading="lazy">
                       <span><strong>Claudine Uwayezu</strong><br>Kigali, Rwanda</span>
                     </div>
                   </div>
@@ -152,7 +239,7 @@
                 <p class="Subheadline"></p>
                 <div class="Offerings-container">
                     <div class="offering">
-                        <img src="pics/photo3.jpg" alt="offering 1">
+                        <img src="pics/photo3.jpg" alt="Beginner Skating Lessons in Kigali" loading="lazy">
                         <h3>Beginner Lessons</h3>
                         <p>Our beginner skating lessons are designed for children who are
                            new to skating. In a supportive environment, they will learn the basics 
@@ -161,7 +248,7 @@
                            scheduling options to accommodate your busy lifestyle.</p>
                     </div>
                     <div class="offering">
-                        <img src="pics/grok_image_xcg5ges.jpg" alt="offering 2">
+                        <img src="pics/grok_image_xcg5ges.jpg" alt="Intermediate Skating Lessons in Kigali" loading="lazy">
                         <h3>Intermediate Lessons</h3>
                         <p>Intermediate lessons are perfect for kids who have a grasp of 
                           the basics and are ready to take their skills to the next level. 
@@ -171,7 +258,7 @@
                           their own pace.</p>
                     </div>
                     <div class="offering">
-                        <img src="pics/3.jpg" alt="offering 3">
+                        <img src="pics/3.jpg" alt="Advanced Skating Lessons in Kigali" loading="lazy">
                         <h3>Advanced Lessons</h3>
                         <p>For advanced skaters, our specialized lessons focus on mastering 
                           complex skills and preparing for competitions. We emphasize agility, 
@@ -207,14 +294,14 @@
                     </div>      
                     <div class="features">
                       <div class="feature">
-                          <img src="pics/photo2.jpg" alt="Skateboarding">
+                          <img src="pics/photo2.jpg" alt="Skateboarding" loading="lazy">
                           <h3>Promoting Safety</h3>
                           <p>Safety is our top priority. Our goal is to create 
                             a safe and enjoyable learning space for everyone.</p>
                           
                       </div>                        
                       <div class="feature">
-                          <img src="pics/6.jpg" alt="Skateboarding">
+                          <img src="pics/6.jpg" alt="Skateboarding" loading="lazy">
                           <h3>Nurturing Skills</h3>
                           <p>At Rwanda Prayer Skates,We focus on developing 
                             essential skills in a supportive environment. 
@@ -225,7 +312,7 @@
                 </section>            
                 <section class="ct">
                     <h2>Get Started Today</h2>
-                    <p>You can reach out to us on WhatsApp</p>
+                    <p>We will write a sub-headline that introduces your call to action...</p>
                     <a href="Tel: +250788881189" target="_blank"><button class="b">Call To Action</button></a>
                 </section>
             </div>
@@ -329,6 +416,6 @@
                 <script src="HOME.js" defer></script>  
          </div>                      
     </body>
-</html>
+  </html>
 
 

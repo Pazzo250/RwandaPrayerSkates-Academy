@@ -163,9 +163,40 @@
             <div class="container">
               <div>                
                 <div class="story-section">
-                  <video width="480" height="270" controls preload="none" poster="pics/cover.jpg" loading="lazy">
-                    <source src="pics/RwandaPrayerSkates.mp4" type="video/mp4">                    
+                  <video id="lazyVideo" width="480" height="270" controls preload="none" poster="pics/cover.jpg" loading="lazy" playsinline>
+                    <!-- Source will be set by lazy loading script -->
                   </video>
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                      var video = document.getElementById('lazyVideo');
+                      var videoSrc = "pics/RwandaPrayerSkates.mp4";
+
+                      if ('IntersectionObserver' in window) {
+                        var observer = new IntersectionObserver(function(entries, observer) {
+                          entries.forEach(function(entry) {
+                            if (entry.isIntersecting) {
+                              var source = document.createElement('source');
+                              source.src = videoSrc;
+                              source.type = 'video/mp4';
+                              video.appendChild(source);
+                              video.load();
+                              observer.unobserve(video);
+                            }
+                          });
+                        }, { threshold: 0.25 });
+
+                        observer.observe(video);
+                      } else {
+                        // Fallback: load video immediately
+                        var source = document.createElement('source');
+                        source.src = videoSrc;
+                        source.type = 'video/mp4';
+                        video.appendChild(source);
+                        video.load();
+                      }
+                    });
+                  </script>
                   <div class="story-text">
                     <h3>Be Inspired By Our Young Learners' stories</h3>
                     <p>Embark on a transformative adventure with Rwanda Prayer Skates, where
@@ -312,7 +343,7 @@
                 </section>            
                 <section class="ct">
                     <h2>Get Started Today</h2>
-                    <p>We will write a sub-headline that introduces your call to action...</p>
+                    <p>You can reach out to us on whatsApp</p>
                     <a href="Tel: +250788881189" target="_blank"><button class="b">Call To Action</button></a>
                 </section>
             </div>
